@@ -50,8 +50,13 @@ const Footer = () => {
                 </div>
             </div>
             <div className="bg-black py-4">
-                <p className="text-center font-bold text-white">
-                    Copyright © CulinaryCloud. All rights reserved.
+                <p className="text-center font-bold  text-white">
+                    <span className="block md:inline">
+                        Copyright © CulinaryCloud.
+                    </span>{' '}
+                    <span className="block md:inline">
+                        All rights reserved.
+                    </span>
                 </p>
             </div>
         </footer>

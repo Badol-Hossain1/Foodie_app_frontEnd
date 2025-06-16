@@ -1,12 +1,12 @@
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 
 import { Carousel } from 'react-responsive-carousel'
-import logo1 from './../../../../public/home/01.jpg'
-import logo2 from './../../../../public/home/02.jpg'
-import logo3 from './../../../../public/home/03.png'
-import logo4 from './../../../../public/home/04.jpg'
-import logo5 from './../../../../public/home/05.png'
-import logo6 from './../../../../public/home/06.png'
+import logo1 from '/home/01.jpg'
+import logo2 from '/home/02.jpg'
+import logo3 from '/home/03.png'
+import logo4 from '/home/04.jpg'
+import logo5 from '/home/05.png'
+import logo6 from '/home/06.png'
 
 const Banner = () => {
     return (

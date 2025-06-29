@@ -24,14 +24,7 @@ const Testimonials = () => {
                 heading="Testimonials"
             />
 
-            <div className="flex justify-center">
-                <Rating
-                    className=""
-                    style={{ maxWidth: 180 }}
-                    value={4}
-                    readOnly
-                />
-            </div>
+       
 
             <Swiper
                 navigation={true}
@@ -40,6 +33,15 @@ const Testimonials = () => {
             >
                 {reviews.map((review) => (
                     <SwiperSlide key={review._id}>
+
+                             <div className="flex justify-center">
+                <Rating
+                    className=""
+                    style={{ maxWidth: 180 }}
+                    value={review.rating}
+                    readOnly
+                />
+            </div>
                         <div className="m-24">
                             <h3 className="text-2xl text-center text-orange-300">
                                 {review.name}

@@ -10,12 +10,7 @@ const Menu = () => {
                 <title>hello world</title>
             </Helmet>
             <Cover title="OUR MENU" img={MenuIcon} />
-            <PopularMenu />
-            <Cover title="OUR MENU" img={MenuIcon} />
-            <PopularMenu />
-            <Cover title="OUR MENU" img={MenuIcon} />
-            <PopularMenu />
-            <Cover title="OUR MENU" img={MenuIcon} />
+           
         </div>
     )
 }

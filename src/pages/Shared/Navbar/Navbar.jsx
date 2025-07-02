@@ -6,7 +6,7 @@ import close from '/close.svg'
 
 const Navbar = () => {
     const [open, setOpen] = useState(false)
-    console.log('🚀 ~ Navbar ~ open:', open)
+    
 
     const navItems = [
         {
@@ -37,8 +37,8 @@ const Navbar = () => {
     ]
 
     return (
-        <div className="md:opacity-60 opacity-90 bg-black text-white w-full z-10 fixed">
-            <nav className="grid   grid-cols-3  items-center  px-4 py-2">
+        <div className="md:opacity-60 w-full max-w-screen-xl opacity-90 bg-black text-white  z-10 fixed">
+            <nav className="grid  grid-cols-2 w-full  items-center  px-4 py-2">
                 <div className="col-span-1">
                     <img className="w-10" src={logo} alt="" srcset="" />
                 </div>
@@ -47,7 +47,7 @@ const Navbar = () => {
                     className={`${
                         open
                             ? 'absolute flex w-full items-center top-20 gap-4 left-0 pt-6 pb-6 transition-all duration-300 ease-in-out bg-white text-black flex-col md:hidden'
-                            : 'hidden col-span-2  md:flex md:gap-4 uppercase items-center justify-end'
+                            : 'hidden col-span-1  md:flex md:gap-4 uppercase items-center justify-end'
                     }`}
                 >
                     {navItems.map((item) => {
@@ -55,7 +55,7 @@ const Navbar = () => {
                     })}
                 </ul>
 
-                <div className=" flex col-span-2 justify-end">
+                <div className=" flex col-span-1 justify-end">
                     <img
                         onClick={() => setOpen(!open)}
                         className="bg-white items-end  md:hidden  w-6 block"
